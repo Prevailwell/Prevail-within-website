@@ -1553,3 +1553,366 @@ transform: translateX(-35px);
     line-height: 1.6;
     color: #6e6872;
 }
+/* ========================================
+   MOBILE CLEANUP
+======================================== */
+
+@media (max-width: 768px) {
+
+    .site-header,
+    header {
+        position: relative;
+        min-height: 0;
+        height: auto;
+    }
+
+    .brand {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .brand-logo-image {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .benefit-strip {
+        display: block;
+        position: relative;
+        margin-top: 0;
+        padding: 34px 26px;
+        overflow: hidden;
+    }
+
+    .benefit {
+        width: 100%;
+        margin-bottom: 28px;
+        padding-bottom: 28px;
+    }
+
+    .about-section {
+        padding: 60px 26px;
+    }
+
+    .support-intro {
+        display: block;
+        margin-bottom: 16px;
+    }
+
+    .support-script {
+        font-size: 27px;
+    }
+
+    .support-rest {
+        font-size: 11px;
+        line-height: 1.4;
+    }
+
+    .about-headline {
+        font-size: 44px;
+        line-height: 1.05;
+        max-width: 100%;
+        margin-bottom: 26px;
+    }
+
+    .about-visual-layout {
+        display: block;
+        margin-top: 18px;
+    }
+
+    .about-visual-layout > p {
+        font-size: 18px;
+        line-height: 1.6;
+        margin-bottom: 22px;
+    }
+
+    .support-visual {
+        width: 100%;
+        margin: 40px 0 90px;
+    }
+
+    .support-photo-placeholder {
+        min-height: 220px;
+        border-radius: 18px;
+    }
+
+    .support-photo-placeholder span {
+        font-size: 36px;
+        transform: none;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .floating-support-note {
+        left: 15px;
+        right: 15px;
+        bottom: -65px;
+        max-width: none;
+        padding: 20px;
+    }
+
+    .reveal-left {
+        transform: translateX(-60px);
+    }
+
+    .reveal-right {
+        transform: translateX(60px);
+    }
+
+    .reveal-left.active,
+    .reveal-right.active {
+        transform: translateX(0);
+    }
+}
+/* ========================================
+   BREATHE FEATURE
+======================================== */
+
+.breathe-feature {
+    width: 100%;
+    margin: 70px 0 100px;
+}
+
+.breathe-scene {
+    position: relative;
+    width: calc(100% - 80px);
+    max-width: 1180px;
+    height: 650px;
+    margin: 0 auto;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.breathe-background {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transform: scale(1.03);
+    animation: breatheZoom 14s ease-in-out infinite alternate;
+}
+
+@keyframes breatheZoom {
+    from {
+        transform: scale(1.03);
+    }
+
+    to {
+        transform: scale(1.09);
+    }
+}
+
+.breathe-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        90deg,
+        rgba(255, 248, 238, 0.20),
+        rgba(255, 248, 238, 0.02)
+    );
+}
+
+.breathe-copy {
+    position: absolute;
+    top: 90px;
+    left: 70px;
+    z-index: 2;
+    max-width: 520px;
+}
+.breathe-copy h2 {
+    margin: 0 0 22px;
+    font-family: "Italiana", Georgia, serif;
+    font-size: 78px;
+    line-height: 0.95;
+    font-weight: 400;
+    color: #123d32;
+}
+
+.breathe-copy p {
+    margin: 0;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.30em;
+    color: #393b37;
+}
+
+.breathe-card {
+    position: absolute;
+    right: 55px;
+    bottom: 55px;
+    z-index: 3;
+    width: 430px;
+    max-width: calc(100% - 110px);
+    padding: 38px;
+    border-radius: 28px;
+    background: rgba(255, 250, 244, 0.97);
+    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.15);
+}
+
+.breathe-card h3 {
+    margin: 0 0 18px;
+    font-family: "Italiana", Georgia, serif;
+    font-size: 37px;
+    line-height: 1.12;
+    font-weight: 400;
+    color: #4f4a56;
+}
+
+.breathe-card p {
+    margin: 0 0 25px;
+    font-size: 17px;
+    line-height: 1.6;
+    color: #6b6670;
+}
+
+.breathe-button {
+    display: inline-block;
+    padding: 15px 29px;
+    border-radius: 50px;
+    background: #d8a52f;
+    color: #1e1e1e;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease;
+}
+
+.breathe-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+/* ========================================
+   BREATHE FEATURE - MOBILE
+======================================== */
+
+@media (max-width: 768px) {
+
+    .breathe-feature {
+        margin: 35px 0 70px;
+    }
+
+    .breathe-scene {
+        width: 100%;
+        min-height: 760px;
+        border-radius: 0;
+    }
+
+    .breathe-background {
+        object-position: center;
+    }
+
+    .breathe-copy {
+        top: 48px;
+        left: 28px;
+        right: 28px;
+    }
+
+    .breathe-copy h2 {
+        font-size: 58px;
+        line-height: 0.95;
+    }
+
+    .breathe-copy p {
+        max-width: 280px;
+        font-size: 11px;
+        line-height: 1.6;
+        letter-spacing: 0.25em;
+    }
+
+    .breathe-card {
+        left: 22px;
+        right: 22px;
+        bottom: 32px;
+        width: auto;
+        padding: 29px;
+        border-radius: 25px;
+    }
+
+    .breathe-card h3 {
+        font-size: 31px;
+        line-height: 1.12;
+    }
+
+    .breathe-card p {
+        font-size: 16px;
+        line-height: 1.55;
+    }
+
+    .breathe-button {
+        width: 100%;
+        text-align: center;
+        padding: 16px 20px;
+    }
+}
+/* ========================================
+   BREATHE SECTION - DESKTOP FIX
+======================================== */
+
+@media (min-width: 769px) {
+
+    .breathe-feature {
+        width: 100%;
+        margin: 60px auto 90px;
+    }
+
+    .breathe-scene {
+        position: relative;
+        width: calc(100% - 80px);
+        max-width: 1100px;
+        min-height: 560px;
+        margin: 0 auto;
+        border-radius: 28px;
+        overflow: hidden;
+    }
+
+    .breathe-background {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .breathe-copy {
+        position: absolute;
+        top: 55px;
+        left: 55px;
+        max-width: 420px;
+        z-index: 2;
+    }
+
+    .breathe-copy h2 {
+        font-size: clamp(52px, 6vw, 72px);
+        line-height: 0.95;
+        margin: 0 0 18px;
+    }
+
+    .breathe-card {
+        position: absolute;
+        right: 40px;
+        bottom: 40px;
+        width: min(380px, 38%);
+        padding: 32px;
+        border-radius: 24px;
+        z-index: 3;
+    }
+
+    .breathe-card h3 {
+        font-size: 30px;
+        line-height: 1.12;
+    }
+
+    .breathe-card p {
+        font-size: 16px;
+        line-height: 1.55;
+    }
+}
