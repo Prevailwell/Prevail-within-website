@@ -45,7 +45,7 @@
 
     <div class="mobile-menu-links">
         <a href="#home">Home</a>
-        <a href="#about">About</a>
+        <a href="#" onclick="document.getElementById('about-modal').showModal(); return false;">About</a>
 
         <a href="https://prevail.sessionshealth.com/"
            target="_blank"
@@ -63,7 +63,7 @@
 
     <a href="index.html#home">Home</a>
 
-    <a href="#about.html">About</a>
+    <a href="#" onclick="document.getElementById('about-modal').showModal(); return false;">About</a>
 
     <a href="https://prevail.sessionshealth.com/"
        target="_blank"
@@ -745,3 +745,98 @@
 </body>
 
 </html>
+<!-- ABOUT POPUP -->
+<dialog id="about-modal" class="legal-modal about-modal">
+    <div class="legal-modal-content about-modal-content">
+
+        <button
+            class="legal-close"
+            onclick="document.getElementById('about-modal').close()">
+            ×
+        </button>
+
+        <div class="about-top">
+
+    <div class="about-photo-wrap">
+        <img src="./images/outdoor%20photo.PNG"
+             alt="Latreece Kilgo"
+             class="about-photo">
+    </div>
+
+    <div class="about-top-text">
+
+        <p class="section-label">Meet Latreece</p>
+
+        <h2>There is a person underneath all the roles.</h2>
+
+        <p class="about-intro">
+            I’m Latreece Kilgo. I’m a counselor, speaker, wife,
+            mom, and founder of Prevail Within Counseling.
+        </p>
+
+    </div>
+
+</div>
+
+                <p>
+                    Like many of the people I meet, I know what it means to
+                    carry a lot of roles and still keep showing up. Life can
+                    look fine on the outside while underneath, you’re carrying
+                    responsibilities, relationships, transitions, grief,
+                    expectations, and things that do not always have an easy name.
+                </p>
+
+                <p>
+                    That is part of what shaped Prevail Within — creating space
+                    for the whole person, not just the role you play, what you
+                    accomplish, or the season you are navigating.
+                </p>
+
+                <h3>What it feels like to work with me</h3>
+
+                <p>
+                    My style is warm, conversational, reflective, and practical.
+                    There is room for hard conversations, but also laughter,
+                    personality, faith when you want it, and moments when you
+                    simply need to say, <em>“This is a lot.”</em>
+                </p>
+
+                <p>
+                    My goal is to help you slow things down, recognize patterns,
+                    understand what may be happening underneath the surface, and
+                    find practical ways to move forward with greater clarity
+                    and intention.
+                </p>
+
+                <h3>Beyond the counseling room</h3>
+
+                <p>
+                    My work also extends beyond individual counseling. I speak,
+                    lead workshops and trainings, and create practical resources
+                    around emotional wellness, burnout, grief, relationships,
+                    boundaries, stress, communication, and growth.
+                </p>
+
+                <p>
+                    I enjoy partnering with businesses, organizations, churches,
+                    and teams to strengthen the people behind the work. Through
+                    engaging trainings and intentional conversations, I help
+                    organizations invest in their employees, strengthen
+                    communication, build healthier team cultures, and support
+                    people as they grow.
+                </p>
+
+                <p>
+                    I believe organizations grow stronger when the people within
+                    them are supported well. Whether I’m sitting with one person
+                    or speaking to a room, the heart behind my work is the same:
+                    helping people understand what they are carrying, grow with
+                    intention, and show up well in the spaces that matter to them.
+                </p>
+
+        <p class="about-signoff">
+            You can keep showing up without carrying everything alone.
+        </p>
+
+    </div>
+</dialog>

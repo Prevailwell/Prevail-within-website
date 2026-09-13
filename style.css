@@ -2680,3 +2680,102 @@ transform: translateX(-35px);
         cursor: pointer;
     }
 }
+/* ABOUT POPUP — ALIGNMENT ONLY */
+
+.about-modal-content {
+    width: min(900px, 90vw);
+}
+
+.about-layout {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 45px;
+    align-items: start;
+}
+
+.about-photo {
+    width: 100%;
+    max-width: 300px;
+    height: 390px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 18px;
+    display: block;
+}
+
+.about-copy {
+    min-width: 0;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .about-layout {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .about-photo {
+        width: 100%;
+        max-width: 280px;
+        height: 340px;
+        margin: 0 auto;
+    }
+}
+/* ABOUT TOP - PHOTO + INTRO SIDE BY SIDE */
+
+.about-top {
+    display: grid;
+    grid-template-columns: 360px 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.about-photo-wrap {
+    width: 100%;
+}
+
+.about-photo {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+}
+
+.about-top-text {
+    padding-top: 5px;
+}
+
+/* Meet Latreece */
+.about-top-text .section-label {
+    font-family: "Brush Script MT", "Segoe Script", cursive;
+    font-size: 3.5rem;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: 0;
+    line-height: 1;
+    margin: 0 0 20px;
+    color: #b8862b;
+}
+
+/* MOBILE */
+@media (max-width: 700px) {
+    .about-top {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .about-photo {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .about-top-text .section-label {
+        font-size: 2.8rem;
+    }
+}
+/* Make About Me popup taller */
+.about-modal-content {
+    max-height: 90vh;
+    height: 90vh;
+    overflow-y: auto;
+}
